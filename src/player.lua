@@ -7,7 +7,7 @@ function player:init( pspawnx,pspawny )
 	self.y = pspawny
 	self.width = 20
 	self.height = 50
-	self.speed = 10
+	self.speed = 4
 	self.xvel = 0
 	self.yvel = 0
 	self.friction = 8
@@ -83,8 +83,8 @@ end
 
 function player:draw()
 
-love.graphics.rectangle( "fill",self.x,self.y,self.width,self.height )
-
+--love.graphics.rectangle( "fill",self.x,self.y,self.width,self.height )
+	love.graphics.drawq(sprsheet_wizard,spr_wizard_f1,self.x,self.y)
 
 
 end 
